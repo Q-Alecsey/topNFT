@@ -1,0 +1,100 @@
+
+@import url("./reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+body{
+    letter-spacing: 0;
+    background-color: #F9F9F9;
+}
+
+:root{
+    --almost-black:#141416;
+    --default-font-size:0.89rem;
+}
+
+.container{
+    margin:0 auto;
+    max-width: 1250px;
+}
+
+
+
+/* footer */
+
+.footer{
+    margin-top:15px;
+
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer__nav{
+    display: flex;
+    align-items: center;
+}
+
+.footer__items{
+    display:flex;
+    justify-content: center;
+    gap:40px;
+}
+
+.footer__link{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.5;
+
+    color:#606060;
+}
+
+.footer__search{
+    position:relative;
+}
+
+.footer__input{
+    width:350px;
+    height:57px;
+    padding-left:70px;
+
+    border-radius: 15px;
+
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: var(--default-font-size);
+    line-height: 1.17;
+    letter-spacing: -2%;
+
+    background-color: #EDEDED;
+}
+
+.footer__search-button{
+    position:absolute;
+    top:16px;
+    left: 25px;
+}
+
+.footer__wallet-button{
+    background-color: var(--almost-black);
+    color:#fff;
+
+    border-radius: 16px;
+    border:2px solid var(--almost-black);
+
+    padding:16px 24px;
+
+    font-family: Inter;
+    font-weight: 600;
+    font-size: var(--default-font-size);
+    line-height: 1.5;
+
+    transition: 600ms ease;
+}
+
+.footer__wallet-button:hover{
+    background-color: #EDEDED;
+    color:var(--almost-black);
+}
+
