@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/swiper-bundle.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>DiveSea</title>
 </head>
 <body>
@@ -82,7 +82,7 @@
             </div>
 
             <div class="main__menu-swiper">
-                <div class="swiper">
+                <div class="swiper menu-swiper">
                     <div class="swiper-wrapper">              
                         <div class="swiper-slide">
                             <div class="swiper-slide__images">
@@ -90,29 +90,43 @@
                                 <img src="./images/main/nft-swiper/1_before.png" alt="" class="swiper-slide__images-before swiper-image">
                             </div>
                         </div>
-                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__images">
+                                <img src="./images/main/nft-swiper/2_after.png" alt="" class="swiper-slide__images-after swiper-image">
+                                <img src="./images/main/nft-swiper/2_before.png" alt="" class="swiper-slide__images-before swiper-image">
+                            </div>
+                        </div>
                         <div class="swiper-slide">Slide 3</div>
                     </div>            
                 </div>
 
                 <div class="menu-swiper__buttons">
-                    <button class="swiper__button-prev">
-                        <svg width="40" height="40" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2397 8.38963C10.8023 7.98584 10.1203 8.01311 9.71654 8.45055L6.23402 12.2232C5.85287 12.6361 5.85287 13.2726 6.23401 13.6855L9.71653 17.4583C10.1203 17.8957 10.8023 17.923 11.2397 17.5192C11.6772 17.1154 11.7045 16.4335 11.3007 15.996L9.48802 14.0323L19.9611 14.0323C20.5565 14.0323 21.0391 13.5497 21.0391 12.9544C21.0391 12.3591 20.5565 11.8765 19.9611 11.8765L9.48805 11.8765L11.3007 9.91283C11.7044 9.47539 11.6772 8.79343 11.2397 8.38963Z" fill="#929292"/>
+                    <button class="swiper__button-prev menu__swiper-button">
+                        <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.23973 0.389633C5.80229 -0.0141637 5.12034 0.0131106 4.71654 0.450551L1.23402 4.22324C0.852869 4.63614 0.852865 5.27259 1.23401 5.6855L4.71653 9.45827C5.12032 9.89572 5.80228 9.923 6.23973 9.51921C6.67717 9.11542 6.70445 8.43346 6.30066 7.99601L4.48802 6.0323L14.9611 6.0323C15.5565 6.0323 16.0391 5.54969 16.0391 4.95437C16.0391 4.35905 15.5565 3.87645 14.9611 3.87645L4.48805 3.87645L6.30065 1.91283C6.70445 1.47539 6.67717 0.793429 6.23973 0.389633Z" fill="#929292"/>
                         </svg>
                     </button>
-                    <button class="swiper__button-next">
-                        <svg width="27" height="27" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.79184 0.822633C8.10322 0.535199 8.58866 0.554614 8.87609 0.865996L11.355 3.5515C11.6264 3.84542 11.6264 4.29846 11.3551 4.59238L8.8761 7.27794C8.58867 7.58933 8.10323 7.60875 7.79185 7.32132C7.48046 7.03389 7.46104 6.54845 7.74847 6.23707L9.03876 4.83924L1.5837 4.83924C1.15994 4.83924 0.816406 4.49571 0.816406 4.07194C0.816406 3.64818 1.15994 3.30465 1.5837 3.30465L9.03874 3.30465L7.74848 1.90688C7.46104 1.5955 7.48046 1.11007 7.79184 0.822633Z" fill="#929292"/>
+
+                    <button class="swiper__button-next menu__swiper-button">
+                        <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7603 0.389633C11.1977 -0.0141637 11.8797 0.0131106 12.2835 0.450551L15.766 4.22324C16.1471 4.63614 16.1471 5.27259 15.766 5.6855L12.2835 9.45827C11.8797 9.89572 11.1977 9.923 10.7603 9.51921C10.3228 9.11542 10.2955 8.43346 10.6993 7.99601L12.512 6.0323L2.03886 6.0323C1.44354 6.0323 0.960937 5.54969 0.960937 4.95437C0.960937 4.35905 1.44354 3.87645 2.03886 3.87645L12.5119 3.87645L10.6993 1.91283C10.2956 1.47539 10.3228 0.793429 10.7603 0.389633Z" fill="#929292"/>
                         </svg>
                     </button>
                 </div>
+                <div class="menu-swiper__arrow">
+                    <svg width="131" height="136" viewBox="0 0 131 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.6507 43.2949C32.4339 30.7255 51.9743 23.0115 72.683 28.6293C91.3749 33.7001 103.143 49.6308 90.5396 69.3323C84.5735 78.6586 71.8706 85.1866 61.8852 79.874C50.7606 73.9554 59.5288 59.017 66.6505 54.7089C83.2839 44.6468 106.696 49.3237 118.212 68.8676C131.849 92.0121 108.785 103.532 108.769 103.344" stroke="black" stroke-width="3.37884" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19.2682 18.3822C19.8774 20.8066 19.5256 23.2337 19.2862 25.6772C18.5006 33.7008 15.3552 42.0309 9.71151 47.2933C17.1379 44.0371 27.7921 42.619 34.5374 48.3347" stroke="black" stroke-width="3.37884" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="menu-swiper__ornament">
+                    <img src="./images/main/nft-swiper/for_menu-swiper/dot_ornament.png" alt="">
+                </div>
             </div>
-           
         </article>
     </main>
 
     <script src="./source/swiper-bundle.js"></script>
-    <script scr="./source/main.js"></script>
+    <script src="./source/main.js"></script>
 </body>
 </html>

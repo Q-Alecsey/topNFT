@@ -253,35 +253,78 @@ body{
     line-height: 1.5;
 }
 
+/* Menu__swiper */
+
+.main__menu-swiper{
+    position: relative;
+}
+
+.menu-swiper{
+    position: relative;
+    z-index:10;
+}
+
 .swiper-slide__images{
     display:flex;
-    justify-content: space-around;
 
+    gap:20px;
     height: 500px;
 }
 
-.swiper-image{
-    max-width:270px;
-    max-height: 270px;
-}
-
 .swiper-slide__images-after{
-    max-width:300px;
-    max-height: 300px;
+    max-width:350px;
+    max-height: 350px;
 }
 
 .swiper-slide__images-before{
     align-self:end;
-    margin-bottom:30px;
+    flex-shrink: 0;
 
-    max-width:240px;
-    max-height: 240px;
+    width:270px;
+    aspect-ratio: 1 / 1;
 }
 
+.menu-swiper__buttons{
+    box-shadow: 5px 45px 47px -3px rgba(34, 60, 80, 0.2);
+    background: linear-gradient(#bbbaba,#bbbaba)
+        no-repeat center center / 2px 50%;   
+    background-color: #f8f8f8;
+    
+    display:inline-block;
+    border-radius: 17.25px;
 
+    padding:20px;
+
+    position: absolute;
+    z-index: 20;
+    left:90px;
+    top:471px;
+}
+
+.menu__swiper-button:hover svg *{
+    fill:#0F0F0F;
+}
 
 .swiper__button-prev{
-  
+    margin-right:31px;
+}
+
+.swiper__button-next{
+    margin-left:31px;
+}
+
+.menu-swiper__arrow{
+    position: absolute;
+    z-index: 20;
+    top:90px;
+    left:360px;
+}
+
+.menu-swiper__ornament{
+    position: absolute;
+    z-index: 5;
+    top:0;
+    left:500px;
 }
 
 @media(max-width:1050px){
