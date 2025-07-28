@@ -1,0 +1,179 @@
+
+.topCollections{
+    font-size: 1rem;
+}
+
+.topC__title{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 2.8em;
+    line-height: 1;
+
+    text-align: center;
+
+    margin-bottom:60px;
+}
+
+.topC__table table{
+    width:100%;
+
+    border-collapse:separate;
+    border-spacing: 0dvh 40px;   
+
+}
+
+.topC__table tbody td{
+    border-bottom:#EBE9E9 solid 2px;
+
+    padding-bottom:20px;
+}
+
+.topC__table-subtitle{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1.4em;
+    line-height: 1.3;
+    letter-spacing: 1%;
+
+    color:#93989A;
+}
+
+.topC__collection{
+    display:flex;
+    flex-direction: row;
+}
+
+.topC__collection-image{
+    width: 4.5em;
+    aspect-ratio: 1 / 1;
+
+    border-radius: 50%;
+}
+
+.topC__collection-names{
+    display:flex;
+    flex-direction: column;
+
+    margin-left:20px;
+}
+
+.topC__collection-name{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 1.4;
+    vertical-align: middle;
+
+    color: var(--almost-black);
+}
+
+.topC__collection-author{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.5;
+    vertical-align: middle;
+
+    color:#64748B;
+}
+
+.topC__volume{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.3em;
+    line-height: 1.4;
+
+    color: var(--almost-black);
+}
+
+.topC__volume::before{
+    content:
+    url("./../images/main/weekly-swiper/current_bid.svg");
+
+    margin-right:5px;
+
+    vertical-align:middle;
+}
+
+.topC__per24{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1.3em;
+    line-height: 1.3;
+    letter-spacing: 1%;
+
+    color:#10C352;
+}
+
+.topC__floor-price{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.3em;
+    line-height: 1.4;
+
+    color:var(--almost-black)
+}
+
+.topC__floor-price::before{
+    content:
+    url("./../images/main/weekly-swiper/current_bid.svg");
+
+    margin-right:5px;
+
+    vertical-align:middle;
+}
+
+.topC__owners{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1.3em;
+    line-height: 1.3;
+    letter-spacing: 1%;
+
+    color:var(--almost-black)
+}
+
+.topC__items{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1.3em;
+    line-height: 1.3;
+    letter-spacing: 1%;
+
+    color:var(--almost-black);
+}
+
+.topC__explore{
+    margin-top:30px;
+
+    text-align: end;
+}
+
+.topC__explore-link p{
+    display:inline;
+
+    margin-right:8px;
+
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 2.2;
+    letter-spacing: -0.09px;
+
+    color:#ACADB9;
+}
+
+.topC__explore-link svg{
+    vertical-align: text-top;
+}
+
+.topC__explore-link:hover 
+.topC__explore-link__content{
+    color:var(--almost-black);
+}
+
+.topC__explore-link:hover 
+.topC__explore-link__svg *{
+    stroke:var(--almost-black);
+}
+

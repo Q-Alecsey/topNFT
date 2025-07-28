@@ -1,0 +1,189 @@
+
+.main__weekly{
+    font-size:1rem;
+
+    margin-top:140px;
+    padding-top:70px;
+
+    background-color: #F1F1F1;  
+    
+    margin-bottom:200px;
+}
+
+.weekly__container{
+    max-width: 1440px;
+    width:100%;
+
+    margin-inline:auto;
+}
+
+.main__weekly-title{
+    text-align: center;
+
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 0.6;
+
+    color:#C5C5C5;
+
+    margin-bottom:100px;
+}
+
+.main__weekly-swiper{
+    margin-bottom:100px;
+}
+
+.weekly-card{
+    position: relative;
+
+    width:16em;
+
+    padding:0.875em 0.875em 1.5em;
+    
+    box-shadow: 2px 4px 10px 0px rgba(34, 60, 80, 0.21);
+
+    background-color: #fff;
+    border-radius: 1.5em;
+}
+
+.weekly-card__image{
+    width:18em;
+
+    border-radius: 1.5em;
+    aspect-ratio: 1 / 1;
+}
+
+.weekly-card__time{
+    position: absolute;
+    top:30px;
+    left:9.5em;
+
+    padding: 6px 12px;
+
+    background-color: #1C1D2059;
+    border-radius: 8px;
+    
+}
+
+.weekly-card__time-content{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 0.8em;
+    line-height: 1.5;
+    letter-spacing: 0.12px;
+
+    color:#ffffff;
+}
+
+.weekly-card__title{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.31em;
+    line-height: 1.4;
+    color:#141416;
+
+    margin-top:0.9em;
+    margin-bottom:0.67em;
+}
+
+.weekly-group__bid{
+    display:flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.weekly-group__title{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 0.875em;
+    line-height: 1.5;
+    letter-spacing: 0.12px;
+
+    margin-bottom:5px;
+
+    color:#94A3B8;
+}
+
+.weekly-group__coefficient{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1.05em;
+    line-height: 1.5;
+
+    display:inline;
+}
+
+.weekly-group__coefficient::before{
+    content:url("./../images/main/weekly-swiper/current_bid.svg");
+
+    margin-right:5px;
+    vertical-align: sub;
+}
+
+.weekly-group__button{
+    background-color: var(--almost-black);
+    color:#fff;
+
+    padding: 1em 1.56em;
+    border-radius: 0.75em;
+
+    border: currentColor solid 1px;
+
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 0.875em;
+    line-height: 1.5;
+    letter-spacing: 0.12px;
+    vertical-align: middle;
+
+    text-transform: uppercase;
+
+    white-space:nowrap;
+
+    transition: 0.4s ease;
+}
+
+.weekly-group__button:hover{
+    color:var(--almost-black);
+    background-color: #ffffff;
+}
+
+.weekly-swiper__buttons-centering{
+    display:flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+.weekly-swiper__buttons{
+    box-shadow: 5px 45px 47px -3px rgba(34, 60, 80, 0.2);
+    background: linear-gradient(#bbbaba,#bbbaba)
+        no-repeat center center / 2px 50%;   
+    background-color: #f8f8f8;
+    
+    display:inline-block;
+    border-radius: 17.25px;
+
+    padding:20px;
+    margin-bottom:90px;
+
+   max-width: 140px;
+}
+
+.weekly__swiper-button:hover svg *{
+    fill:#0F0F0F;
+}
+
+.weekly__button-prev{
+    margin-right:31px;
+}
+
+.weekly__button-next{
+    margin-left:31px;
+}
+
+.menu-swiper__image{
+    border-radius: 25px;
+}

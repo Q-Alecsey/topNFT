@@ -1,0 +1,232 @@
+
+.marketplace{
+    font-size: 1rem;
+
+    margin-top:100px;
+}
+
+.marketplace__title{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 2.3em;
+    line-height: 0.6;
+
+    color:var(--almost-black);
+
+    text-align: center;
+}
+
+.market__options{
+    margin-top:65px;
+
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.market__options-button{
+    padding: 0.6em 1.6em;
+
+    border:3px solid var(--almost-black);
+    border-radius: 0.9em;
+}
+
+.market__options-content{
+    font-family: Manrope, sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: 0.22px;
+}
+
+.market__options-button:hover{
+    color:#535353;
+}
+
+.market__options-content__category::before{
+    content:url("./../images/main/market/tablet.svg");
+
+    margin-right: 8px;
+
+    vertical-align: middle;
+}
+
+.market__options-content__collection::before{
+    content:url("./../images/main/market/voice.svg");
+
+    margin-right: 8px;
+
+    vertical-align: middle;
+}
+
+.market__options-content__price::before{
+    content:url("./../images/main/market/dollar.svg");
+
+    margin-right: 5px;
+
+    vertical-align: middle;
+}
+
+
+/* GRID */
+
+.market__grid{
+    margin-top:100px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 16em);
+    justify-content: center;
+
+    gap:68px 55px;
+}
+
+.market-card{
+    position: relative;
+
+    width:17em;
+
+    padding:0.875em 0.875em 1.5em;
+    
+    box-shadow: 2px 4px 35px 0px rgba(34, 60, 80, 0.21);
+
+    background-color: #fff;
+    border-radius: 1.5em;
+}
+
+.market-card__image{
+    width:18em;
+
+    border-radius: 1.5em;
+    aspect-ratio: 1 / 1;
+}
+
+.market-card__time{
+    position: absolute;
+    top:30px;
+    left:9em;
+
+    width:6.5em;
+    padding: 6px 12px;
+    white-space: nowrap;
+
+    background-color: #1C1D2059;
+    border-radius: 8px;
+}
+
+.market-card__time-content{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 0.8em;
+    line-height: 1.5;
+    letter-spacing: 0.12px;
+
+    color:#ffffff;
+}
+
+.market-card__title{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.31em;
+    line-height: 1.4;
+    color:#141416;
+
+    margin-top:0.9em;
+    margin-bottom:0.67em;
+}
+
+.market-group__bid{
+    display:flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.market-group__title{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 0.875em;
+    line-height: 1.5;
+    letter-spacing: 0.12px;
+
+    margin-bottom:5px;
+
+    color:#94A3B8;
+}
+
+.market-group__coefficient{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1.05em;
+    line-height: 1.5;
+
+    display:inline;
+}
+
+.market-group__coefficient::before{
+    content:url("./../images/main/market/current_bid.svg");
+
+    margin-right:5px;
+    vertical-align: sub;
+}
+
+.market-group__button{
+    background-color: var(--almost-black);
+    color:#fff;
+
+    padding: 1em 1.56em;
+    border-radius: 0.75em;
+
+    border: currentColor solid 1px;
+
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 0.875em;
+    line-height: 1.5;
+    letter-spacing: 0.12px;
+    vertical-align: middle;
+
+    text-transform: uppercase;
+
+    white-space:nowrap;
+
+    transition: 0.4s ease;
+}
+
+.market-group__button:hover{
+    color:var(--almost-black);
+    background-color: #ffffff;
+}
+
+
+.market__explore{
+    margin-top:60px;
+
+    text-align: end;
+}
+
+.market__explore-link p{
+    display:inline;
+
+    margin-right:8px;
+
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 2.2;
+    letter-spacing: -0.09px;
+
+    color:#ACADB9;
+}
+
+.market__explore-link svg{
+    vertical-align: text-top;
+}
+
+.market__explore-link:hover 
+.market__explore-link__content{
+    color:var(--almost-black);
+}
+
+.market__explore-link:hover 
+.market__explore-link__svg *{
+    stroke:var(--almost-black);
+}

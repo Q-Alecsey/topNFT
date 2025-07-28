@@ -1,0 +1,140 @@
+
+.weekly__viewed{
+    position: absolute;
+    top:10px;
+    left:900px;
+
+    width:23em;
+
+    padding:24px 18px;
+
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 10px 10px 50px 0px #1414161A;
+}
+
+.weekly__viewed-recent{
+    display:flex;
+    justify-content: space-between;
+
+    margin-bottom:27px;
+}
+
+.weekly__viewed-title{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.31em;
+    line-height: 1.35;
+    letter-spacing: 0.2px;
+}
+
+.weekly__viewed-button{
+    padding:5px;
+}
+
+.weekly__viewed-cells{
+    display:flex;
+    flex-direction: column;
+    row-gap:20px;
+}
+
+.weekly__viewed-cell{
+    display:grid;
+    grid-template-columns: 1fr 4fr auto;
+    column-gap:10px;
+}
+
+.weekly__viewed-img__content{
+    position: relative;
+}
+
+.weekly__viewed-img{
+    min-width:50px;
+
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.weekly__viewed-number{
+    position: absolute;
+    top:30px;
+    left:33px;
+
+    width:20px;
+    height:20px;
+    
+    background-color: #ffffff;
+    border-radius: 50%;
+
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 0.75em;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+}
+
+.weekly__viewed-number__content{
+    margin-top:2px;
+
+    text-align: center;
+}
+
+.weekly__viewed-names{
+    padding-left: 10px;
+}
+
+.weekly__viewed-name{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.4;
+
+    color:#141416;
+}
+
+.weekly__viewed-nickname{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 0.75em;
+    line-height: 1.5;
+
+    color:#64748B;
+
+    margin-top:6px;
+}
+
+.weekly__viewed-numbers{
+    display:flex;
+    flex-direction: column;
+}
+
+.weekly__viewed-coef{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.weekly__viewed-coef::before{
+    content:url("./../images/main/weekly-swiper/current_bid.svg");
+
+    margin-right:4px;
+    vertical-align: sub;
+}
+
+.weekly__viewed-num{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 1.5;
+
+    margin-top:5px;
+}
+
+.weekly__viewed-num.increase{
+    color:#10C352;
+}
+
+.weekly__viewed-num.decrease{
+    color:#E23333;
+}
