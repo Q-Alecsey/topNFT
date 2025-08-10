@@ -76,17 +76,20 @@
     grid-template-columns: repeat(auto-fill, 16em);
     justify-content: center;
 
-    gap:68px 55px;
+    /* gap:68px 55px; */
+    gap:4.25em 3.43em;
 }
 
 .market-card{
+    font-size:1em;
+
     position: relative;
 
     width:17em;
 
     padding:0.875em 0.875em 1.5em;
     
-    box-shadow: 2px 4px 35px 0px rgba(34, 60, 80, 0.21);
+    box-shadow: 2px 4px 35px 0px rgba(38, 62, 81, 0.21);
 
     background-color: #fff;
     border-radius: 1.5em;
@@ -101,7 +104,7 @@
 
 .market-card__time{
     position: absolute;
-    top:30px;
+    top:1.87em;
     left:9em;
 
     width:6.5em;
@@ -230,3 +233,94 @@
 .market__explore-link__svg *{
     stroke:var(--almost-black);
 }
+
+
+/* Adaptive */
+
+
+@media (max-width:908px){
+    .marketplace{
+        font-size:0.9rem;
+    }
+
+    .market__explore-link__svg{
+        width:14px;
+        height:14px;
+    }
+}
+
+@media (max-width:832px){
+    .marketplace{
+        font-size:0.8rem;
+    }
+
+    .market__explore-link__svg{
+        width:12px;
+        height:12px;
+    }
+}
+
+@media (max-width:755px){
+    .marketplace{
+        font-size:0.7rem;
+    }
+
+    .market__grid{
+        margin-top:50px;
+    }
+
+    .market__explore-link__svg{
+        width:13px;
+        height:11px;
+    }
+}
+
+@media (max-width:677px){
+    .marketplace{
+        font-size:0.6rem;
+    }
+
+    .market__explore{
+        font-size:0.8rem;
+
+        text-align:center;
+    }
+
+    .market__explore-link__svg{
+        width:14px;
+        height:14px;
+    }
+}
+
+@media (max-width:480px){
+    .marketplace{
+        margin-top: 200px;
+    }
+
+    .marketplace__title{
+        font-size:3em;
+    }
+}
+
+@media (max-width:420px){
+
+    .market__grid{
+        grid-template-columns: 25em;
+    }
+
+    .market-card{
+        font-size:1.5em;
+    }
+
+    .market-card:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(5)){
+        display:none;
+    }
+}
+
+@media (max-width:360px){
+    .market__options-button{
+        padding:0.3em 1em;
+    }
+}
+
+

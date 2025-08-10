@@ -7,7 +7,7 @@
 
     background-color: #F1F1F1;  
     
-    margin-bottom:200px;
+    margin-bottom:12.5rem;
 }
 
 .weekly__container{
@@ -22,7 +22,7 @@
 
     font-family: Poppins;
     font-weight: 600;
-    font-size: 45px;
+    font-size: 2.8em;
     line-height: 0.6;
 
     color:#C5C5C5;
@@ -56,13 +56,13 @@
 
 .weekly-card__time{
     position: absolute;
-    top:30px;
-    left:9.5em;
+    top:1.87em;
+    right: 1.5em;
 
-    padding: 6px 12px;
+    padding: 0.4em 0.75em;
 
     background-color: #1C1D2059;
-    border-radius: 8px;
+    border-radius: 0.5em;
     
 }
 
@@ -187,3 +187,80 @@
 .menu-swiper__image{
     border-radius: 25px;
 }
+
+/* Adaptive */
+
+@media (max-width:1400px){
+    .main__weekly{
+        font-size:0.9rem;
+    }
+}
+
+@media (max-width:1250px){
+    .main__weekly{
+        font-size:0.8rem;
+    }
+}
+
+@media (max-width:1150px){
+    .main__weekly{
+        font-size:0.7rem;
+    }
+}
+
+@media (max-width:1150px){
+    .main__weekly{
+        font-size:0.7rem;
+    }
+}
+
+@media (max-width:900px){
+    .weekly-card__time{
+        right:2em;
+    }
+}
+
+@media (max-width:700px){
+    .main__weekly{
+        font-size:0.6rem;
+    }
+
+    .main__weekly-title{
+        margin-bottom:50px;
+    }
+
+    .main__weekly-swiper{
+        margin-bottom: 50px;
+    }
+
+    .weekly-swiper__buttons{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:620px){
+    .main__weekly{
+        font-size:0.5rem;
+    }
+}
+
+@media (max-width:580px){
+    .main__weekly{
+        font-size:0.9rem;
+    }
+}
+
+@media (max-width:520px){
+    .weekly-card__title{
+        font-size:1rem;
+    }  
+}
+
+
+@media (max-width:360px){
+    .main__weekly-title{
+        font-size:2.5em;
+    }
+}
+
+

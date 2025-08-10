@@ -1,23 +1,25 @@
 
 .weekly__viewed{
+    font-size:1rem;
+
     position: absolute;
-    top:10px;
-    left:900px;
+    top:0.63em;
+    right:2em;
 
     width:23em;
 
-    padding:24px 18px;
+    padding:1.5em 1.1em;
 
     background-color: #ffffff;
-    border-radius: 16px;
-    box-shadow: 10px 10px 50px 0px #1414161A;
+    border-radius: 1em;
+    box-shadow: 0.63em 0.63em 3.13em 0px #1414161A;
 }
 
 .weekly__viewed-recent{
     display:flex;
     justify-content: space-between;
 
-    margin-bottom:27px;
+    margin-bottom:1.69em;
 }
 
 .weekly__viewed-title{
@@ -29,19 +31,19 @@
 }
 
 .weekly__viewed-button{
-    padding:5px;
+    padding:0.31em;
 }
 
 .weekly__viewed-cells{
     display:flex;
     flex-direction: column;
-    row-gap:20px;
+    row-gap:1.25em;
 }
 
 .weekly__viewed-cell{
     display:grid;
     grid-template-columns: 1fr 4fr auto;
-    column-gap:10px;
+    column-gap:0.63em;
 }
 
 .weekly__viewed-img__content{
@@ -80,7 +82,7 @@
 }
 
 .weekly__viewed-names{
-    padding-left: 10px;
+    padding-left: 0.63em;
 }
 
 .weekly__viewed-name{
@@ -95,7 +97,7 @@
 .weekly__viewed-nickname{
     font-family: Poppins;
     font-weight: 400;
-    font-size: 0.75em;
+    font-size: 0.9em;
     line-height: 1.5;
 
     color:#64748B;
@@ -137,4 +139,58 @@
 
 .weekly__viewed-num.decrease{
     color:#E23333;
+}
+
+@media (max-width:1350px){
+    .weekly__viewed{
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width:1220px){
+    .weekly__viewed{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:1160px){
+    .weekly__viewed{
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width:1090px){
+    .weekly__viewed{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:1030px){
+    .weekly__viewed{
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width:970px){
+    .weekly__viewed{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:770px){
+    .weekly__viewed{
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width:720px){
+    .weekly__viewed{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width:660px){
+    .weekly__viewed{
+        display: none;
+    }
 }

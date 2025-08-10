@@ -14,7 +14,10 @@
 }
 
 .innerCollector__image{
-    transform:translateX(220px);
+    font-size:1rem;
+
+    width:48em;
+    height:42em;
 }
 
 .innerCollector__points-title{
@@ -24,9 +27,13 @@
     line-height: 1.2;
     text-transform: capitalize;
 
-    margin-bottom:50px;
+    margin-bottom:1.5em;
 
     color:rgb(204, 204, 204);
+}
+
+.innerCollector__points-title{
+    white-space: nowrap;
 }
 
 .innerCollector__points-title__special{
@@ -69,9 +76,19 @@
     border-radius: 1em;
     border: var(--almost-black) solid 1px;
 
-    margin-top:70px;
+    margin-top:4.4em;
+
+    white-space:nowrap;
 
     transition:0.5s;
+}
+
+.buttonLess{
+    display:none;
+}
+
+.buttonLess > a{
+    margin-top:2em;
 }
 
 .innerCollector__points-button__arrow{
@@ -93,3 +110,125 @@
     
     stroke:var(--almost-black);
 }
+
+/* Adaptive */
+
+@media (max-width:1270px){
+
+    .innerCollector__image{
+        font-size:0.9rem;
+    }
+}
+
+@media (max-width:1180px){
+
+    .innerCollector__image{
+        font-size:0.8rem;
+    }
+    
+    .innerCollector__points-button__arrow{
+        width:1.5em;
+        height:1.5em;
+    }
+}
+
+@media (max-width:1080px){
+
+    .innerCollector{
+        font-size:0.9rem;
+    }
+}
+
+@media (max-width:1030px){
+    .innerCollector{
+        font-size:0.8rem;
+    }
+
+    .innerCollector__image{
+        font-size:0.7rem;
+    }
+}
+
+@media (max-width:930px){
+    .innerCollector{
+        font-size:0.7rem;
+    }
+
+    .innerCollector__image{
+        font-size:0.6rem;
+    }
+}
+
+@media (max-width:800px){
+    .innerCollector{
+        font-size:0.6rem;
+    }
+
+    .innerCollector__points-content{
+        font-size:1.3em;
+    }
+
+    .innerCollector__points-button{
+        padding: 1.3em 1em 1.3em 1.5em;
+    }
+
+    .innerCollector__image{
+        font-size:0.5rem;
+    }
+}
+
+@media (max-width:700px){
+    .innerCollector{
+        font-size:0.5rem;
+    }
+}
+
+@media (max-width:650px){
+    .innerCollector{
+        font-size:0.45rem;
+    }
+
+    .innerCollector__image{
+        font-size:0.45rem;
+    }
+}
+
+@media (max-width:580px){
+    .innerCollector{
+        font-size:0.8rem;
+    }
+
+    .innerCollector__image{
+        font-size:0.7rem;
+    }
+
+    .innerCollector__points > p{
+        display:none;
+    }
+
+    .buttonMore{
+        display:none;
+    }
+
+    .buttonLess{
+        display:block;
+    }
+
+    .innerCollectorFlex{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:500px){
+    .innerCollector{
+        font-size:0.7rem;
+    }
+
+    .innerCollector__image{
+        font-size:0.6rem;
+    }
+}
+
+
+

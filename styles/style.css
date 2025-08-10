@@ -10,6 +10,8 @@
 
 @import url("./header.css");
 
+@import url("./popupWindow.css");
+
 @import url("./mainMenu.css");
 
 @import url("./weeklySwiper.css");
@@ -26,4 +28,6 @@
 @import url("./questions.css");
 
 @import url("./banner.css");
+
+@import url("./footer.css")
 

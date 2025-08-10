@@ -7,7 +7,30 @@ const weeklySwiper = new Swiper(".main__weekly-swiper",{
     slidesPerView:4.5,
     spaceBetween:40,
     centeredSlides:true,
-    allowTouchMove:false,
+    // allowTouchMove:false,
+
+    breakpoints:{
+        900:{
+            slidesPerView:4.5,
+        },
+
+        581:{
+            slidesPerView:3.5,
+            spaceBetween:30,
+        },
+
+        500:{
+            slidesPerView:2,
+        },
+
+        450:{
+            slidesPerView:1.8,
+        },
+
+        300:{
+            slidesPerView:1.5,
+        },
+    },
 });
 
 const thisWeeklySwiper = document.querySelector(".main__weekly-swiper").swiper;

@@ -1,9 +1,17 @@
 
 import {Main} from "./main-swiper.js";
 import {answersToQuestions} from "./questions.js";
-
+import {settingPopUpMenu } from "./header.js";
+import {addingGrowth, centerAlignment} from "./topCollections.js";
+ 
 Main();
+
 answersToQuestions();
+
+settingPopUpMenu();
+
+addingGrowth();
+centerAlignment(); //Redo
 
 //resizing a picture (InnerCollector)
 

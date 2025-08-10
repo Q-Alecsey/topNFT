@@ -5,7 +5,29 @@ export function Main(){
     direction:'horizontal',
     loop:true,
     slidesPerView:'auto',
-    spaceBetween:1,
+
+    breakpoints:{
+      800:{
+        spaceBetween:50,
+      },
+
+      900:{
+        spaceBetween:1,
+      },
+
+      580:{
+        spaceBetween:15,
+      },
+
+      500:{
+        spaceBetween:30,
+      },
+
+      300:{
+        spaceBetween:30,
+      },
+      
+    },
   });
 
   //Подключение кнопок из main__menu-swiper для просмотра слайдера
