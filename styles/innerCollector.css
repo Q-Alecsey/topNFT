@@ -83,10 +83,6 @@
     transition:0.5s;
 }
 
-.buttonLess{
-    display:none;
-}
-
 .buttonLess > a{
     margin-top:2em;
 }
@@ -109,6 +105,16 @@
 .innerCollector__points-button__arrow *{
     
     stroke:var(--almost-black);
+}
+
+/* Additionaly for js */
+
+.buttonLess{
+    display:none;
+}
+
+.addCenterAlignment{
+    text-align: center;
 }
 
 /* Adaptive */

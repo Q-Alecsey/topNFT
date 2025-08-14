@@ -1,7 +1,7 @@
 
 import {Main} from "./main-swiper.js";
-import {answersToQuestions} from "./questions.js";
-import {settingPopUpMenu } from "./header.js";
+import {answersToQuestions, changeTextOfDiff} from "./questions.js";
+import {settingPopUpMenu} from "./header.js";
 import {addingGrowth, centerAlignment} from "./topCollections.js";
  
 Main();
@@ -11,15 +11,9 @@ answersToQuestions();
 settingPopUpMenu();
 
 addingGrowth();
-centerAlignment(); //Redo
+centerAlignment(); 
 
-//resizing a picture (InnerCollector)
-
-const innerCollectorImage = document.querySelector(".innerCollector__image");
-const pForWindow = 0.488888;
-
-window.addEventListener("resize", () =>{
-
+function moveInnerCollector(){
     let result = 0;
     let currentWidth = document.documentElement.clientWidth;   
     
@@ -37,7 +31,24 @@ window.addEventListener("resize", () =>{
             result = 220;
             break;
     }
+    
     innerCollectorImage.style.transform = `translateX(${result}px)`;
+}
+
+//resizing a picture (InnerCollector)
+
+const innerCollectorImage = document.querySelector(".innerCollector__image");
+const pForWindow = 0.488888;
+
+//
+
+window.addEventListener("resize", () =>{
+    moveInnerCollector();
+
+    addingGrowth();
+    centerAlignment();
+    
+    changeTextOfDiff();
 })
 
 window.dispatchEvent(new Event("resize"));

@@ -2,6 +2,8 @@
 .community{
    font-size:1rem;
 
+   overflow-x: hidden;
+
    padding-block:200px 100px;
 
    background-color: #fff;
@@ -21,6 +23,8 @@
 }
 
 .community__text{
+    font-size:1em;
+
     position: absolute;
 
     top:50%;
@@ -52,14 +56,12 @@
 
     color:#12141D;
 
-    margin-top:30px;
+    margin-block:1.87em 2.5em;
 }
 
 .community__link{
     display: flex;
     justify-content: center;
-
-    margin-top:40px;
 }
 
 .community__button{
@@ -81,4 +83,67 @@
 .community__button:hover{
     color:#000000;
     background-color: #ffffff;
+}
+
+/* Adaptive */
+
+@media (max-width:900px){
+    .community{
+        font-size:0.9rem;
+    }
+}
+
+@media (max-width:700px){
+    .community{
+        font-size:0.7rem;
+    }
+}
+
+@media (max-width:600px){
+
+     .community__image{
+        min-width:50em;
+    }
+
+    .community__image{
+        object-fit: cover;
+        object-position:top;
+    }
+}
+
+@media (max-width:550px){
+    .community{
+        font-size:0.8rem;
+    }
+
+    .community__content{
+        margin-block:1.3em 2em;
+    }
+}
+
+@media (max-width:500px){
+
+    .community{
+        padding-block:150px 100px;
+    }
+
+    .community__text{
+        font-size:1em;
+
+        width:25em;
+    }
+}
+
+/* @media (max-width:450px){
+
+    .community__text{
+        font-size:0.9em;
+    }
+} */
+
+@media (max-width:390px){
+
+    .community__text{
+        font-size:0.9em;
+    }
 }
